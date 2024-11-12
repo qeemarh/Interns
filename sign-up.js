@@ -1,7 +1,13 @@
-function reg() {
-    const selectedOption = document.getElementById("select").value;
+function login() {
+    window.location.href = "login.html";
+}
 
-    if (selectedOption == "Fellow") {
+function reg(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    let selectedOption = document.getElementById("select").value;
+
+    if (selectedOption === "Fellow") {
         window.location.href = "fellow-sign-up.html";
     } else if (selectedOption === "Organization") {
         window.location.href = "organization-signup.html";
@@ -20,7 +26,7 @@ function showPopup(message) {
     // Set timeout to automatically close the popup after 3 seconds
     setTimeout(() => {
         closePopup();
-    }, 3000)
+    }, 3000);
 }
 
 function closePopup() {

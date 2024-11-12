@@ -11,6 +11,7 @@
     <header data-aos="fade-down" class="navbar">
         <div class="container-1">
             <h1 class="logo">Interns</h1>
+           <button title="Go to login page" onclick="login()">Login</button>
         </div>
     </header>
     <div class="container">
@@ -21,7 +22,7 @@
                 <option value="Fellow">Fellow</option>
                 <option value="Organization">Organization</option>
             </select>
-            <input type="submit" id="submit" onclick="reg()" value="sign-up">
+            <input type="submit" id="submit" onclick="reg(event)" value="sign-up">
             <p>Already have an account?<a href="./login.html"> Login</a></p>
         </form>
         <div data-aos="fade-left" class="img">
